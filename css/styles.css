@@ -26,11 +26,13 @@
 #search{
     height: 200px;
     width: 50%;
+    font-size: 4rem;
 }
 
 ::placeholder{
     float: left;
     font-size: 4rem;
     padding: 60px;
+    
 }
 
