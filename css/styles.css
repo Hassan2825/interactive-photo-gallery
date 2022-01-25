@@ -1,0 +1,36 @@
+* {
+    max-width: 100%;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 4fr));
+    grid-gap: 80px;
+    padding-top: -200px;
+    margin: 300px;
+    grid-template-areas:
+    " header header header header "
+    " box    box    box    box "
+    " box    box    box    box "
+    " box    box    box    box ";
+}
+
+.search1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 130px;
+}
+
+#search{
+    height: 200px;
+    width: 50%;
+}
+
+::placeholder{
+    float: left;
+    font-size: 4rem;
+    padding: 60px;
+}
+
