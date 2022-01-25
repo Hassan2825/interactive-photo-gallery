@@ -1,13 +1,12 @@
-* {
-    max-width: 100%;
+*{
+    margin: auto;
 }
 
-.main {
+.gallery {
     display: grid;
+    margin: 20px 300px 200px 300px;
     grid-template-columns: repeat(4, minmax(150px, 4fr));
-    grid-gap: 80px;
-    padding-top: -200px;
-    margin: 300px;
+    grid-gap: 20px;
     grid-template-areas:
     " header header header header "
     " box    box    box    box "
@@ -15,24 +14,29 @@
     " box    box    box    box ";
 }
 
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .search1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 130px;
+    padding-top: 20px;
 }
 
 #search{
-    height: 200px;
+    height: 50px;
     width: 50%;
     font-size: 4rem;
 }
 
 ::placeholder{
     float: left;
-    font-size: 4rem;
-    padding: 60px;
-    
+    font-size: 1rem;
+    margin: 12px;
 }
 
