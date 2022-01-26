@@ -1,22 +1,22 @@
 *{
-    margin: auto;
+    box-sizing: border-box;
+    padding: 5px;
 }
 
 .gallery {
+    --auto-grid-min-size: 16rem;
     display: grid;
-    margin: 20px 300px 200px 300px;
-    grid-template-columns: repeat(4, minmax(150px, 4fr));
-    grid-gap: 20px;
-    grid-template-areas:
-    " header header header header "
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 4fr));
+    grid-template-areas: 
     " box    box    box    box "
     " box    box    box    box "
     " box    box    box    box ";
+    margin-top: 30px;
 }
 
-img{
-    width: 100%;
+img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
 }
 
@@ -25,18 +25,17 @@ img{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
-#search{
+#searchBar{
     height: 50px;
     width: 50%;
-    font-size: 4rem;
+    font-size: 1rem;
 }
 
 ::placeholder{
     float: left;
     font-size: 1rem;
-    margin: 12px;
+    margin: 10px;
 }
-
