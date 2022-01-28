@@ -1,7 +1,1 @@
 baguetteBox.run('.gallery');
-    
-
-
-    
-
-
