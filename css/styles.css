@@ -1,23 +1,26 @@
 *{
     box-sizing: border-box;
-    padding: 5px;
 }
 
 .gallery {
-    --auto-grid-min-size: 16rem;
+    --auto-grid-min-size: 14rem;
     display: grid;
+    grid-gap: 10px;
     grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 4fr));
     grid-template-areas: 
     " box    box    box    box "
     " box    box    box    box "
     " box    box    box    box ";
     margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-img {
+.gallery img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    
 }
 
 .search1 {
